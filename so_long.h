@@ -18,7 +18,7 @@
 # define SIZE_MAX 18446744073709551615ULL
 # define OPEN_MAX 1024
 
-# include "/home/eel-garo/include/mlx/mlx.h"
+# include "/home/eel-garo/includes/mlx/mlx.h"
 
 # include <unistd.h>
 # include <stdlib.h>

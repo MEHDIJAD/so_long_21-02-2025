@@ -54,9 +54,9 @@ BSRCS = bonus/so_long_bonus.c \
 
 CC 		= cc
 
-CFLAGS 	= -Wall -Wextra -Werror  -fsanitize=address
+CFLAGS 	= -Wall -Wextra -Werror -fsanitize=address
 
-MLX = -L/home/eel-garo/include/mlx/ -lmlx -lX11 -lXext
+MLX = -L/home/eel-garo/includes/mlx/ -lmlx -lX11 -lXext
 
 
 OBJS = $(SRCS:.c=.o)

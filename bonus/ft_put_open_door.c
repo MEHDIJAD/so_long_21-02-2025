@@ -45,10 +45,6 @@ int	ft_put_open_door(t_data *data)
 {
 	t_exit exit;
 	ft_exit_position(data, &exit);
-	data->img_exit_open = mlx_xpm_file_to_image(data->mlx,
-			data->relative_path_exit_open, &data->img_widht, &data->img_height);
-	if (!data->img_exit_open)
-		return (ft_printf(2, "Failed exit_open image"), ft_exit(data), 0);
 	mlx_put_image_to_window(data->mlx, data->win, data->img_exit_open,
 		(exit.y * data->img_widht), (exit.x * data->img_height));
 	mlx_do_sync(data->mlx);

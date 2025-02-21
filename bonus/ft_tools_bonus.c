@@ -31,22 +31,22 @@ void	ft_init_data(t_data *data)
 	data->img_collact = NULL;
 	data->img_exit = NULL;
 	data->img_enemy = NULL;
-	data->img_exit_open = NULL; //!
+	data->img_exit_open = NULL;
 	data->ptr = NULL ;
-	data->relative_path_hero = "/home/eel-garo/Desktop/M.2/so_long/"
+	data->relative_path_hero = "/home/eel-garo/42-COURSES/so_long/"
 		"textures/1.xpm";
-	data->relative_path_wall = "/home/eel-garo/Desktop/M.2/so_long/"
+	data->relative_path_wall = "/home/eel-garo/42-COURSES/so_long/"
 		"textures/block.xpm";
-	data->relative_path_collact = "/home/eel-garo/Desktop/M.2/so_long/"
+	data->relative_path_collact = "/home/eel-garo/42-COURSES/so_long/"
 		"textures/collectible.xpm";
-	data->relative_path_exit = "/home/eel-garo/Desktop/M.2/so_long/"
+	data->relative_path_exit = "/home/eel-garo/42-COURSES/so_long/"
 		"textures/exit.xpm";
-	data->relative_path_floor = "/home/eel-garo/Desktop/M.2/so_long/"
+	data->relative_path_floor = "/home/eel-garo/42-COURSES/so_long/"
 		"textures/space.xpm";
-	data->relative_path_enemy = "/home/eel-garo/Desktop/M.2/so_long/"
+	data->relative_path_enemy = "/home/eel-garo/42-COURSES/so_long/"
 		"textures/enemy.xpm";
-	data->relative_path_exit_open = "/home/eel-garo/Desktop/M.2/so_long/"
-		"textures/exit_open.xpm"; //!
+	data->relative_path_exit_open = "/home/eel-garo/42-COURSES/so_long/"
+		"textures/exit_open.xpm";
 	ft_helper_function_int(data);
 }
 

@@ -34,6 +34,5 @@ int	ft_first_move(int keycode, t_data *data)
     	ft_printf(1, "CONGRATULATIONS! YOU WIN!\n");
     	ft_exit(data);	
 	}
-
 	return (0);
 }
