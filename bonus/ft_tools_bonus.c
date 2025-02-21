@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 11:20:30 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/21 16:56:29 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/21 20:04:28 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static void	ft_helper_function_int(t_data *data)
 	data->x_p = 0;
 	data->y_p = 0;
 	data->cl = 0;
+	data->img_widht = 0;
+	data->img_height = 0;
 }
 
 void	ft_init_data(t_data *data)
@@ -29,8 +31,7 @@ void	ft_init_data(t_data *data)
 	data->img_collact = NULL;
 	data->img_exit = NULL;
 	data->img_enemy = NULL;
-	data->img_widht = 0;
-	data->img_height = 0;
+	data->img_exit_open = NULL; //!
 	data->ptr = NULL ;
 	data->relative_path_hero = "/home/eel-garo/Desktop/M.2/so_long/"
 		"textures/1.xpm";
@@ -44,6 +45,8 @@ void	ft_init_data(t_data *data)
 		"textures/space.xpm";
 	data->relative_path_enemy = "/home/eel-garo/Desktop/M.2/so_long/"
 		"textures/enemy.xpm";
+	data->relative_path_exit_open = "/home/eel-garo/Desktop/M.2/so_long/"
+		"textures/exit_open.xpm"; //!
 	ft_helper_function_int(data);
 }
 

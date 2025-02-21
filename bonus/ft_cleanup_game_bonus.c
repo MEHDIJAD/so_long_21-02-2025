@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 11:18:24 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/21 14:42:33 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/21 20:44:19 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	ft_cleanup_game(t_data *data)
 		mlx_destroy_image(data->mlx, data->img_exit);
 	if (data->img_enemy)
 		mlx_destroy_image(data->mlx, data->img_enemy);
+	if (data->img_exit_open)
+		mlx_destroy_image(data->mlx, data->img_exit_open);
 	if (data->enemies)
 		free(data->enemies);
 	if (data->win)

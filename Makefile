@@ -40,6 +40,8 @@ BSRCS = bonus/so_long_bonus.c \
         bonus/ft_put_image_bonus.c \
         bonus/ft_moving_enemy.c \
         bonus/ft_moving_player_bonus.c \
+        bonus/ft_put_open_door.c \
+        bonus/ft_count_collectibles.c \
         libft/ft_strlen.c \
         libft/ft_strchr.c \
         libft/ft_calloc.c \
@@ -52,7 +54,7 @@ BSRCS = bonus/so_long_bonus.c \
 
 CC 		= cc
 
-CFLAGS 	= -Wall -Wextra -Werror -Wunused-function -fsanitize=address
+CFLAGS 	= -Wall -Wextra -Werror  -fsanitize=address
 
 MLX = -L/home/eel-garo/include/mlx/ -lmlx -lX11 -lXext
 
@@ -76,7 +78,7 @@ $(FT_PRINTF_LIB):
 	$(MAKE) -C $(FT_PRINTF_DIR)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) $(MLX) $(FT_PRINTF_LIB) -o $(NAME)                      
+	$(CC) $(CFLAGS) $(OBJS) $(MLX) $(FT_PRINTF_LIB) -o $(NAME)                     
 
 %.o: %.c so_long.h 
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@

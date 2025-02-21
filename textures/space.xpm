@@ -1,8 +1,8 @@
 /* XPM */
-static char *result[] = {
+static char *midBlocks_02[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 1 1 ",
-"  c black",
+"  c #444774",
 /* pixels */
 "                                ",
 "                                ",

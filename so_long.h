@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 11:10:52 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/21 17:04:18 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/21 20:27:40 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct s_data
 	void	*img_floor;
 	void	*img_collact;
 	void	*img_exit;
+	void	*img_exit_open;
 	void	*img_enemy;
 	int		img_widht;
 	int		img_height;
@@ -57,6 +58,7 @@ typedef struct s_data
 	char	*relative_path_collact;
 	char	*relative_path_exit;
 	char	*relative_path_enemy;
+	char	*relative_path_exit_open;
 	int		x_p;
 	int		y_p;
 	int		cl;
@@ -102,8 +104,11 @@ void	ft_put_image(t_data *data, int i, int j, char c);
 void	ft_init_data(t_data *data);
 size_t	ft_enemy_count(t_data *data);
 int		ft_moving_enemy(t_data *data);
+int		ft_game_loop(t_data *data);
 void	ft_get_enemy_positions(t_data *data);
+int		ft_count_collectibles(t_data *data);
 int		put_move(t_data *data, int new_y, int new_x, int *movement_count);
+int		ft_put_open_door(t_data *data);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 size_t	ft_strlen(const char *buf);

@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 16:34:48 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/21 17:07:36 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/21 19:14:38 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ int	ft_first_move(int keycode, t_data *data)
 	ft_get_player_position(data);
 	if (keycode == XK_Escape)
 		ft_exit(data);
-	if (keycode == XK_Right)
+	if (keycode == 100)
 		put_move(data, data->y_p, data->x_p + 1, &movement_count);
-	if (keycode == XK_Left)
+	if (keycode == 97)
 		put_move(data, data->y_p, data->x_p - 1, &movement_count);
-	if (keycode == XK_Down)
+	if (keycode == 115)
 		put_move(data, data->y_p + 1, data->x_p, &movement_count);
-	if (keycode == XK_Up)
+	if (keycode == 119)
 		put_move(data, data->y_p - 1, data->x_p, &movement_count);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 11:19:00 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/21 15:18:30 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/21 20:38:22 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	put_move(t_data *data, int new_y, int new_x, int *movement_count)
 		if (data->cl != 0)
 			return (0);
 		if (data->cl == 0)
-			ft_exit(data);
+			return (ft_printf(1, "CONGRATULATIONS! YOU WIN!\n"),ft_exit(data), 0);
 	}
 	if (next_pos == 'T')
 		return (ft_printf(1, "GAME OVER!, YOU LOST\n"), ft_exit(data), 0);

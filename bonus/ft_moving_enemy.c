@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 10:33:13 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/21 15:27:30 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/21 20:34:59 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,10 @@ void	ft_move_enemy(t_data *data, t_enemy *enemy)
 		data->ptr[enemy->x][new_enemy_y] != 'E')
 	{
 		if (data->ptr[enemy->x][new_enemy_y] == 'P')
+		{
+			ft_printf(1, "GAME OVER!, YOU LOST\n");
 			ft_exit(data);
+		}
 		ft_put_image(data, enemy->x, new_enemy_y, 'T');
 		ft_put_image(data, enemy->x, enemy->y, '0');
 		data->ptr[enemy->x][enemy->y] = '0';
@@ -91,7 +94,7 @@ int	ft_moving_enemy(t_data *data)
 	static int	frame;
 
 	frame++;
-	if (frame % 5000 != 0)
+	if (frame % 20000 != 0)
 		return (0);
 	if (!data->enemies)
 		return (0);
